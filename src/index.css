@@ -10,7 +10,7 @@ html {
   display: grid;
   place-items: center;
   height: 100vh;
-  background: linear-gradient(hsl(0, 0%, 19%), hsla(0, 0%, 0%, 0.824)), url(https://i.postimg.cc/mgCrKmRg/kasa.jpg);
+  background-image: linear-gradient(hsl(0, 0%, 19%), hsla(0, 0%, 0%, 0.824)), url(background.jpg);
   background-size: cover;
   background-position: center;
   font-family: "Poppins", sans-serif;
