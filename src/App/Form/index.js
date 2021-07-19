@@ -14,7 +14,7 @@ export const Form = ({ calculateResult, result }) => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      <h1 className="form__header">Kalkulator walut</h1>
+      <h1 className="form__header">🤑 KALKULATOR WALUT 🤑</h1>
       <p>
         <label>
           <span className="form__labelText"></span>
@@ -50,8 +50,8 @@ export const Form = ({ calculateResult, result }) => {
       </p>
 
       <p className="form__info">
-        Kursy pochodzą ze strony: https://mybank.pl/kursy-walut/ z dnia
-        11.07.2021
+        Kursy pochodzą z: <a href="https://mybank.pl/kursy-walut/">mybank.pl</a>{" "}
+        z dnia 11.07.2021
       </p>
 
       <Result result={result} />
