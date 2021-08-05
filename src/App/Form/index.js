@@ -54,8 +54,7 @@ export const Form = ({ calculateResult, result }) => {
         Kursy pochodzą z: <a href="https://mybank.pl/kursy-walut/">mybank.pl</a>{" "}
         z dnia 11.07.2021
       </p>
-
       <Result result={result} />
-    </form> //Tutaj wyświetlany jest result
+    </form>
   );
 };
