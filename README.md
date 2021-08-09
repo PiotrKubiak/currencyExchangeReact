@@ -4,7 +4,7 @@
 
 ## DEMO:
 
-[Link to my currency kalkulator](https://https://piotrkubiak.github.io/currencyExchangeReact/)
+[Link to my currency kalkulator](https://piotrkubiak.github.io/currencyExchangeReact/)
 
 ![Calculator](src/screen.jpg)
 
