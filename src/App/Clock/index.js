@@ -10,7 +10,7 @@ const formatDate = (date) =>
     day: "numeric",
     month: "long",
   });
-//Funkcja, która pokazuje format daty i godziny
+//Funkcja, konwertuje datę i godzinę na łańcuch znaków wg czasu z komputera
 export const Clock = () => {
   const [date, setDate] = useState(new Date());
 
