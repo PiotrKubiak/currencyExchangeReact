@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./style.css";
+import { Wrapper } from "./styled";
 
 const formatDate = (date) =>
   date.toLocaleString(undefined, {
@@ -21,5 +21,5 @@ export const Clock = () => {
       clearInterval(intervalID);
     };
   }, []);
-  return <div className="clock">Dzisiaj jest {formatDate(date)}</div>;
+  return <Wrapper>Dzisiaj jest {formatDate(date)}</Wrapper>;
 };

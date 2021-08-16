@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import "./style.css";
+import { Button, Field, Header, Info, LabelText } from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(currencies[0].short);
@@ -13,16 +13,15 @@ export const Form = ({ calculateResult, result }) => {
   };
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <h1 className="form__header">🤑KALKULATOR WALUT🤑</h1>
+    <form onSubmit={onSubmit}>
+      <Header>KALKULATOR WALUT</Header>
       <p>
         <label>
-          <span className="form__labelText">PLN*:</span>
-          <input
+          <LabelText>PLN*:</LabelText>
+          <Field
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
             placeholder="Wprowadź kwotę w złotówkach"
-            className="form__field"
             type="number"
             required
             step="0.01"
@@ -31,9 +30,9 @@ export const Form = ({ calculateResult, result }) => {
       </p>
       <p>
         <label>
-          <span className="form__labelText">Waluta:</span>
-          <select
-            className="form__field"
+          <LabelText>Waluta:</LabelText>
+          <Field
+            as="select"
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
@@ -42,17 +41,17 @@ export const Form = ({ calculateResult, result }) => {
                 {currency.name}
               </option>
             ))}
-          </select>
+          </Field>
         </label>
       </p>
       <p>
-        <button className="form__button">Przelicz</button>
+        <Button>Przelicz</Button>
       </p>
 
-      <p className="form__info">
+      <Info>
         Kursy pochodzą z: <a href="https://mybank.pl/kursy-walut/">mybank.pl</a>{" "}
         z dnia 11.07.2021
-      </p>
+      </Info>
       <Result result={result} />
     </form>
   );

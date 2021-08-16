@@ -1,4 +1,4 @@
-# 🤑 CURRENCY-CONVERTER 🤑
+# CURRENCY-CONVERTER
 
 ## This is my currency calculator
 
