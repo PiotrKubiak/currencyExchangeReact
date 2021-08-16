@@ -17,12 +17,13 @@ You can convert from PLN to:
 - Swedish crown
 - Frank
 
+There is a version for the computer and for mobile devices.
+
 ### INSTRUCTION:
 
-When you want to convert PLN to e.g. Euro, you have to enter the value of your money in the PLN field, then select the Euro currency and click "Przelicz".
+When you want to convert PLN to e.g. U.S. Dollar, you have to enter the value of your money in the PLN field, then select the Dolar USA currency and click "Przelicz".
 
-The result will appear in red in the field "Wynik =>"
-If you want to re-transfer, click "Resetuj".
+The result will be displayed below.
 
 You can also see the current exchange rates by clicking on the bottom "AKTUALNE KURSY WALUT"
 
@@ -31,8 +32,9 @@ You can also see the current exchange rates by clicking on the bottom "AKTUALNE 
 ### Technologies used to create the application:
 
 - HTML
-- CSS (FLEX, GRID, Media queries)
 - JavaScript (React)
+- Styled Components
+- Custom hooks
 
 # Getting Started with Create React App
 
