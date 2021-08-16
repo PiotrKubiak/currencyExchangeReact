@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useCurrentDate } from "./useCurrentDate";
 import { Wrapper } from "./styled";
 
 const formatDate = (date) =>
@@ -11,15 +11,7 @@ const formatDate = (date) =>
     month: "long",
   });
 export const Clock = () => {
-  const [date, setDate] = useState(new Date());
+  const date = useCurrentDate();
 
-  useEffect(() => {
-    const intervalID = setInterval(() => {
-      setDate(new Date());
-    }, 1000);
-    return () => {
-      clearInterval(intervalID);
-    };
-  }, []);
   return <Wrapper>Dzisiaj jest {formatDate(date)}</Wrapper>;
 };
