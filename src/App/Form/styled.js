@@ -47,3 +47,11 @@ export const Info = styled.p`
   font-size: 16px;
   color: ${({ theme }) => theme.color.emperor};
 `;
+
+export const Loading = styled.p`
+  color: ${({ theme }) => theme.color.black};
+`;
+
+export const Failure = styled.p`
+  color: ${({ theme }) => theme.color.red};
+`;

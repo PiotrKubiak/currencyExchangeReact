@@ -4,5 +4,6 @@ export const theme = {
     white: "#FFFFFF",
     cararra: "#EFEEEB",
     emperor: "#514649",
+    red: "#FF0000",
   },
 };
