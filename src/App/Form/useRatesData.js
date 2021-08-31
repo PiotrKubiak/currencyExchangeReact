@@ -16,11 +16,11 @@ export const useRatesData = () => {
           throw new Error(response.statusText);
         }
 
-        const { ratesData, date } = await response.json();
+        const { rates, date } = await response.json();
 
         setRatesData({
           state: "success",
-          ratesData,
+          rates,
           date,
         });
       } catch {
