@@ -8,24 +8,15 @@
 
 ![Calculator](src/screen.jpg)
 
-You can convert from PLN to:
-
-- Euro
-- British Pound
-- U.S. Dollar
-- Norwegian crown
-- Swedish crown
-- Frank
+With this calculator, you can convert amounts from PLN to any currency that is located in the European Central Bank
 
 There is a version for the computer and for mobile devices.
 
 ### INSTRUCTION:
 
-When you want to convert PLN to e.g. U.S. Dollar, you have to enter the value of your money in the PLN field, then select the Dolar USA currency and click "Przelicz".
+When you want to convert PLN to e.g. Euro, you have to enter the value of your money in the PLN field, then select the Euro currency and click "Przelicz".
 
 The result will be displayed below.
-
-You can also see the current exchange rates by clicking on the bottom "AKTUALNE KURSY WALUT"
 
 ### 😀 Thank you for using my currency calculator! 😀
 
@@ -35,6 +26,7 @@ You can also see the current exchange rates by clicking on the bottom "AKTUALNE 
 - JavaScript (React)
 - Styled Components
 - Custom hooks
+- Currencies in the calculator are taken from the open API
 
 # Getting Started with Create React App
 
