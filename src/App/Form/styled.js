@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import loading from "./loading.gif";
 
 export const LabelText = styled.span`
   width: 100%;
@@ -50,6 +51,11 @@ export const Info = styled.p`
 
 export const Loading = styled.p`
   color: ${({ theme }) => theme.color.black};
+  background-image: url("${loading}");
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 100%;
+  background-position: center;
 `;
 
 export const Failure = styled.p`

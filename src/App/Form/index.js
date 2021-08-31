@@ -12,7 +12,7 @@ import {
 
 import { useRatesData } from "./useRatesData";
 
-export const Form = () => {
+export const Form = (date) => {
   const [result, setResult] = useState();
   const ratesData = useRatesData();
 
